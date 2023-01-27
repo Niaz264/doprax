@@ -1,4 +1,8 @@
-eaustin6/searchx:latest
-WORKDIR /usr/src/app
-RUN chmod 777 /usr/src/app
-EXPOSE 8090
+ FROM eaustin6/searchx:latest
+MAINTAINER mercuryhg docker@he.cnkmmk.win
+
+WORKDIR /opt/RSSHub
+ENTRYPOINT ["yarn"]
+CMD ["start"]
+EXPOSE 1200
+
