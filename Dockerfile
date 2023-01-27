@@ -1,8 +1,9 @@
- FROM eaustin6/searchx:latest
+FROM eaustin6/searchx:latest
 MAINTAINER mercuryhg docker@he.cnkmmk.win
 
 WORKDIR /opt/RSSHub
 ENTRYPOINT ["yarn"]
-CMD ["start"]
-EXPOSE 1200
+CMD ["bash", "start.sh"]
+EXPOSE 8080
+
 
